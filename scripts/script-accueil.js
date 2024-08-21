@@ -4,23 +4,34 @@ window.addEventListener('DOMContentLoaded', function() {
     // Select the splash screen element
     const splashScreen = document.getElementById('splash-screen');
 
-      // Media Query to change text size for small screens
-      function applyResponsiveTextSize() {
-        const mediaQuery = window.matchMedia('(max-width: 768px)'); // Match screens 768px and below
-        const animatedText = document.getElementById('accueil'); // Target the element with the ID 'accueil'
-
-        if (mediaQuery.matches) { // If the media query matches
-            animatedText.style.fontSize = '20px'; // Set text size to 20px
-        } else {
-            animatedText.style.fontSize = ''; // Reset text size for larger screens
+        // Media Query to change text size and container size for small screens
+        function applyResponsiveStyles() {
+            const mediaQuery = window.matchMedia('(max-width: 768px)'); // Match screens 768px and below
+            const animatedText = document.getElementById('accueil'); // Target the element with the ID 'accueil'
+            const container = document.getElementById('container'); // Target the container element (if applicable)
+    
+            if (mediaQuery.matches) { // If the media query matches
+                animatedText.style.fontSize = '20px'; // Set text size to 20px
+                if (container) {
+                    container.style.width = '90%'; // Adjust container width to 90%
+                    container.style.margin = '0 auto'; // Center the container
+                    container.style.padding = '10px'; // Add padding to the container if necessary
+                }
+            } else {
+                animatedText.style.fontSize = ''; // Reset text size for larger screens
+                if (container) {
+                    container.style.width = ''; // Reset container width for larger screens
+                    container.style.margin = ''; // Reset container margin
+                    container.style.padding = ''; // Reset container padding
+                }
+            }
         }
-    }
-
-    // Apply text size immediately on load
-    applyResponsiveTextSize();
-
-    // Listen for changes in screen size and apply text size accordingly
-    window.addEventListener('resize', applyResponsiveTextSize);
+    
+        // Apply styles immediately on load
+        applyResponsiveStyles();
+    
+        // Listen for changes in screen size and apply styles accordingly
+        window.addEventListener('resize', applyResponsiveStyles);
     // Check if the user has visited the site before using sessionStorage
     if (!sessionStorage.getItem('hasVisited')) {
         // Dynamically create more bubbles for the animation
