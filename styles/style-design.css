@@ -409,12 +409,6 @@ header {
 
 @media (max-width: 768px) {
 
-    /*----Animation first visit-------*/
-
-    #accueil {
-        font-size: 1.5em;
-    }
-
     /*--------Header-------*/
 
     .nav-links ul {
