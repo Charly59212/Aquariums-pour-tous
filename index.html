@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquariums pour tous</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-design.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-----------------------Welcome Animation-------------------->
+
+    <div id="splash-screen" class="splash-screen">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <span id="accueil">Aquariums pour tous</span>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    
+    <!----------------------------Header------------------------->
+    
+    <header>
+        <div class="burger-menu">
+            <span class="menu-toggle">&#9776;</span>
+            <div>
+            <img class="logo-header" src="assets/icon/aquariums-pour-tous.png" alt="aquariums-pour-tous">
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="aquascaping/aquascaping.html">Aquascaping</a></li>
+                    <li><a href="fauneflore/fauneflore.html">Faune & Flore</a></li>
+                    <li><a href="materiel/materiel.html">Matériel</a></li>
+                    <li><a href="blog/blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="search-contact">
+                <input type="text" id="searchBar" placeholder="Recherche...">
+                <a href="contact/contact.html">Contact</a>
+
+                <!--------------Search Bar Message------------>
+                <div id="confirmationMessage" class="confirmation-message">Bientôt disponible !
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-------------------------Main Page------------------------>
+
+    <main>
+
+        <!------------------------Intro------------------------->
+
+        <section id="intro">
+            <h1>Aquariums pour tous</h1>
+            <h3>Plongez dans le monde fascinant de l'aquariophilie</h3>
+            <a href="aquascaping/aquascaping.html" class="btn">Découverte des aquariums</a>
+        </section>
+
+        <!--------------------Aquascaping Section--------------->
+
+        <section id="aquascaping" class="section">
+            <h2>Aquascaping</h2>
+            <span id="subtitle">Plus vrai que nature !</span>
+            <a href="aquascaping/aquascaping3.html" class="btn">Meilleures réalisations</a>
+        </section>
+
+        <!------------------Faune & Flore Section------------->
+
+        <section id="faune-flore" class="section">
+            <h2>Faune et flore</h2>
+            <a href="fauneflore/fauneflore.html" class="btn">Les plantes et animaux</a>
+        </section>
+
+        <!--------------------Materiel Section--------------->
+
+        <section id="materiel" class="section">
+            <h2 id="matos">Matériel</h2>
+            <div class="button-tools">
+                <a href="materiel/materiel.html#kits-complets" class="btn2">Kits complets</a>
+                <a href="materiel/materiel.html#filtration" class="btn2">Filtration</a>
+                <a href="materiel/materiel.html#eclairage" class="btn2">Eclairage</a>
+                <a href="materiel/materiel.html#racines-roches" class="btn2">Racines</a>
+            </div>
+        </section>
+        
+        <!----------------------Blog Section----------------->
+
+        <section id="blog" class="section">
+            <h2 id="matos">Blog</h2>
+            <a href="blog/blog.html" class="btn">Tous nos articles</a>
+        </section>
+
+        <!------------------Page Up button------------------->
+
+        <div class="back-to-top" id="backToTop"><svg viewBox="0 0 24 24">
+            <path d="M12 2L4 10h5v10h6V10h5L12 2z"></path>
+        </svg></div>
+    </main>
+
+    <!-----------------------Footer-------------------------->
+
+    <footer class="footer footer-bis">
+
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Plan du site</h3>
+                <p><a href="index.html">Accueil</a></p>
+                <p><a href="aquascaping/aquascaping.html">Aquascaping</a></p>
+                <p><a href="fauneflore/fauneflore.html">Faune et Flore</a></p>
+                <p><a href="materiel/materiel.html">Matériel</a></p>
+                <p><a href="blog/blog.html">Blog</a></p>
+                </div>
+            <div class="footer-section">
+                <img class="logo2" src="assets/icon/aquariums-pour-tous.png" alt="aquariums-pour-tous" title="aquariums-pour-tous">
+                <div class="logo-icons">
+                    <img src="assets/icon/instagram-2.png" alt="Instagram">
+                    <img src="assets/icon/twitter.png" alt="Twitter">
+                    <img src="assets/icon/facebook.png" alt="Facebook">
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                    <div class="contact"><img class="phone" src="assets/icon/phone.png" alt="telephone"> 01 78 46 38 21</div>
+                    <div class="contact"><img class="phone" src="assets/icon/arobase.png" alt="email"> aquapourtous@gmail.com
+                    </div>
+                    <div class="contact"><img class="phone" src="assets/icon/enveloppe.png" alt="adresse"> Aquariums pour tous
+                        <br> 5 Boulevard de l'Océan - 75000 Paris</div>
+                <a href="contact/contact.html" class="btn contact-us">Contactez-nous !</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Aquariums pour tous | MENTIONS LÉGALES & COOKIES | CGV</p>
+        </div>
+    </footer>
+
+    <!-----------------------Scripts-------------------------->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/script-accueil.js"></script>
+
+</body>
+
+</html>
+
+
+

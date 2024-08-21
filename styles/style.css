@@ -1,0 +1,339 @@
+/*--------------Animation first visit---------------*/
+
+/*------------Welcome text---------------*/
+
+#accueil {
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    font-size: 4.5em; 
+    color: #ffffff; 
+    opacity: 0; 
+    transform: translateY(300px); 
+    animation: fadeInUp 2s ease-out forwards; 
+    animation-delay: 1s; 
+    position: relative;
+    z-index: 10; 
+}
+
+.splash-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #3b5998; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/*------Animation Welcome text--------*/
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*--------Different bubbles-------*/
+
+.bubble {
+    width: 50px;
+    height: 50px;
+    background-color: #92d6e5;
+    border-radius: 50%;
+    animation: float 4s ease-in-out infinite;
+    position: absolute;
+}
+
+.bubble:nth-child(2) {
+    width: 70px;
+    height: 70px;
+    animation-duration: 6s;
+    left: 20%;
+}
+
+.bubble:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    animation-duration: 5s;
+    left: 50%;
+}
+
+.bubble:nth-child(4) {
+    width: 100px;
+    height: 100px;
+    animation-duration: 7s;
+    left: 70%;
+}
+
+/*----Movement of different bubbles---*/
+
+@keyframes float {
+    0% {
+        transform: translateY(100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+
+/*-----------------Main Accueil----------------------*/
+
+/*-----Backgroung Image Section---------*/
+
+main {
+    overflow-x: hidden;
+}
+
+#intro {
+    background-image: url('../assets/images/accueil/aquascape.png');
+    height: 100vh;
+    margin-top: 62px;
+}
+
+#aquascaping,
+#faune-flore,
+#materiel,
+#blog,
+#intro {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+#aquascaping,
+#faune-flore,
+#materiel,
+#blog {
+    height: 80vh;
+}
+
+#aquascaping {
+    background-image: url('../assets/images/accueil/aquascaping.jpg');
+}
+
+#faune-flore {
+    background-image: url('../assets/images/accueil/fauneflore.jpg');
+}
+
+#materiel {
+    background-image: url('../assets/images/accueil/materiel.jpg');
+}
+
+#blog {
+    background-image: url('../assets/images/accueil/blog.jpeg');
+    font-weight: bolder;
+}
+
+/*-----------------Intro------------------*/
+
+#intro h1 {
+    font-size: 2.5rem;
+    z-index: 1;
+    margin: 0;
+    font-family: "Lora", serif;
+    line-height: 45px;
+    animation: glow 3s ease-in-out infinite; 
+}
+
+.section {
+    text-align: center;
+    padding: 20px;
+}
+
+.section h2 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+#intro h3 {
+    font-size: 1rem;
+    margin-top: 12px;
+    width: 700px;
+    z-index: 1;
+}
+
+#blog h2 {
+    font-size: 3rem;
+    margin-top: 5vh;
+}
+
+/*-----------------Title Animation-------------*/
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #3b5998, 0 0 20px #3b5998, 0 0 25px #3b5998, 0 0 30px #3b5998;
+    }
+    50% {
+        text-shadow: 0 0 8px #ffffff, 0 0 12px #0d8329, 0 0 18px #0d8329, 0 0 24px #0d8329, 0 0 30px #0d8329, 0 0 36px #0d8329;
+    }
+    100% {
+        text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #3b5998, 0 0 20px #3b5998, 0 0 25px #3b5998, 0 0 30px #3b5998;
+    }
+}
+
+/*---------------Aquascaping Section---------*/
+
+#subtitle {
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+
+/*---------------Materiel Section------------*/
+
+#matos {
+    padding: 25px 25px;
+    font-weight: bolder;
+    line-height: 40px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    background: #3b5998;
+    margin-top: 50px;
+    font-size: 3rem;
+    animation: rotate3D 5s linear infinite;
+    transform-style: preserve-3d;
+    position: relative;
+    overflow: hidden; 
+}
+
+#matos::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.3); 
+    transform: rotate(45deg);
+    animation: shine 2s linear infinite;
+}
+
+/*----------Tilte animation rotation--------*/
+
+@keyframes rotate3D {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/*------Animation for shine effect--------*/
+
+@keyframes shine {
+    from {
+        transform: translateX(-200%) rotate(45deg);
+    }
+    to {
+        transform: translateX(200%) rotate(45deg);
+    }
+}
+
+/*-----------------Buttons---------------*/
+
+#intro .btn {
+    position: absolute;
+    bottom: 80px;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #0d8329;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    z-index: 1;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+.section .btn {
+    position: absolute;
+    background: #3b5998;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    bottom: 80px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+.btn2 {
+    width: 250px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    background: #0d8329;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    flex: 1;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+#intro .btn:hover {
+    background: white;
+    color: #0d8329;
+}
+
+.section .btn:hover {
+    background: white;
+    color: #3b5998;
+}
+
+.button-tools {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 62vh auto;
+}
+
+.btn2:hover {
+    background: white;
+    color: #0d8329;
+}
+
+
+/*----------Media Queries Tablet--------------*/
+
+@media (max-width: 910px) {
+    
+    #intro  {
+        height: 75vh;
+    }
+
+    #intro .btn, .section .btn {
+        bottom: 30px;
+    }
+   
+}

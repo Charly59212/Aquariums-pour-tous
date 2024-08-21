@@ -1,0 +1,443 @@
+/*---------------Aquascaping page--------------------*/
+
+/*----------Intro-----------*/
+
+.introscape {
+  background-image: url('../assets/images/aquascape/aquascaping.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 5px 5px 15px #3b5998;
+  color: white;
+  text-align: center;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 62px;
+}
+
+.introscape h1 {
+  font-family: "Lora", serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 45px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.introscape h2 {
+  font-size: 25px;
+  font-family: 'Merriweather', serif;
+}
+
+#title-scape {
+  font-family: "PT Serif", serif;
+  font-size: 18px;
+  margin: 35px auto;
+  box-shadow: 1px 1px 25px 5px #3b5898;
+  background: #3b589895;
+}
+
+/*------Intro Buttons------*/
+
+.introscape-buttons {
+  position: absolute;
+  top: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.introscape-buttons .btn {
+  width: 260px;
+  background: #3b5998;
+  color: white;
+  border-radius: 25px;
+  padding: 0.8rem 0.5rem;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
+.introscape .btn:hover {
+  background: white;
+  color: #3b5998;
+}
+
+/*---------Banner-----------*/
+
+.monthly-aquascaping {
+  display: flex;
+  align-items: center;
+  background: white;
+}
+
+.monthly-aquascaping h2 {
+  display: flex;
+  justify-content: end;
+  width: 700px;
+  font-size: 1.8rem;
+  color: #3b5998;
+  margin-right: 15px;
+}
+
+.category {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 700px;
+  font-size: 32px;
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  color: #3b5998;
+  margin-right: 15px;
+}
+
+.banniere {
+  margin-top: 35px;
+  width: 100vw;
+  max-height: 18vh;
+  border-radius: 0 200px 0 0;
+}
+
+.banniere-bis {
+  margin-top: 35px;
+  width: 100vw;
+  max-height: 18vh;
+  border-radius: 200px 0 0 0;
+}
+
+/*--------Article section-------*/
+
+.article {
+  display: flex;
+  padding: 50px;
+  background: #19700399;
+}
+
+.article h3 {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.article-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px 150px;
+  margin: 35px 60px;
+}
+
+.article-content .text {
+  flex: 2;
+  flex-wrap: wrap;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.article-content .image {
+  flex: 1;
+}
+
+.article-content img {
+  width: 35vw;
+  height: 40vh;
+}
+
+.reverse {
+  background: white;
+  color: black;
+}
+
+.reverse h3 {
+  color: black;
+}
+
+.reverse .article-content .text {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.reverse .article-content {
+  flex-direction: row-reverse;
+}
+
+.article {
+  padding: 15px;
+}
+
+.article-pair {
+  background: #3b589898;
+}
+
+/*--------Caroussel-----------*/
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  background: #3b58981c;
+  box-shadow: 5px 10px 10px #3b5998;
+}
+
+.carousel-wrapper h2 {
+  font-size: 28px;
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  text-align: center;
+  color: #3b5998;
+  margin-bottom: 1px;
+  margin-top: 10px;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  width: 88%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.carousel-item {
+  min-width: 350px;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 25vh;
+  border-radius: 10px;
+}
+
+/*---------Caroussel buttons--------*/
+
+.btn-small {
+  display: inline-block;
+  background: #3b5998;
+  color: white;
+  border-radius: 25px;
+  padding: 0.8rem 5rem;
+  margin: 10px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+button.prev,
+button.next {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #3b5998;
+  border: 2px solid #3b5998;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1rem;
+  position: absolute;
+  top: 40%;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button.prev:hover,
+button.next:hover,
+.carousel-item img:hover,
+.btn-small:hover {
+  background-color: #3b5998;
+  color: white;
+  transform: scale(1.1);
+  transition: 0.8s;
+}
+
+.btn-small:hover {
+  background: rgb(200, 200, 200);
+  color: #3b5998;
+}
+
+.carousel-item img,
+.btn-small,
+button.prev,
+button.next {
+  cursor: pointer;
+}
+
+button.prev {
+  left: 5px;
+}
+
+button.next {
+  right: 5px;
+}
+
+/*----------Blog Section-----------*/
+
+.blog-intro {
+  background-image: url('../assets/images/blog/plant/plant.jpg');
+}
+
+#title-blog {
+  margin-top: 2px;
+  ;
+}
+
+
+/*----------Media Queries Tablet--------------*/
+
+@media (max-width: 910px) {
+
+  /*-----------Intro-----------*/
+
+  .introscape,
+  .blog-intro {
+    height: 57vh;
+  }
+
+  .introscape-buttons {
+    top: 55vh;
+  }
+
+  .banniere,
+  .banniere-bis {
+    width: 60vw;
+    max-height: 11vh;
+  }
+
+  /*----Article content-----*/
+
+  .article-content {
+    text-align: center;
+    margin: 1px 50px;
+  }
+
+  .article-content p {
+    text-align: left;
+  }
+
+  .article-content img {
+    width: 60vw;
+    height: 40vh;
+    margin: 5px;
+  }
+
+  /*---Caroussel---*/
+
+  .carousel-container {
+    height: 35vh;
+  }
+
+  .carousel-wrapper h2 {
+    font-size: 20px;
+  }
+
+  .btn-small {
+    padding: 0.5rem 2rem;
+  }
+
+}
+
+
+/*----------Media Queries Smartphone--------------*/
+
+@media (max-width: 768px) {
+
+  /*---------Aquascaping Section---------*/
+
+  .introscape {
+    height: 70vh;
+  }
+
+  .introscape-buttons {
+    top: 45vh;
+    gap: 20px;
+    bottom: 0;
+  }
+
+  .introscape-buttons .btn {
+    margin-top: 1vh;
+    width: 45vw;
+    font-size: 1rem;
+    padding: 0.8rem 0.6rem;
+  }
+
+
+  .article-content p {
+    font-size: 1rem;
+  }
+
+  .article h3 {
+    font-size: 1.5rem;
+  }
+
+  .article-content img {
+    display: flex;
+    margin: auto;
+    width: 65vw;
+    height: 25vh;
+  }
+
+  /*------------Caroussel---------------*/
+
+  button.prev,
+  button.next {
+    font-size: 15px;
+    padding: 0.5rem;
+  }
+
+  /*-----------Faune & Flore------------*/
+
+  .category {
+    font-size: 1.2rem;
+  }
+
+  .size-ban {
+    width: 45vw;
+    margin: 0 0 20px 0;
+    align-content: center;
+  }
+
+  .banniere,
+  .banniere-bis {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 0px;
+    width: 45vw;
+    max-height: 7vh;
+  }
+
+  /*-------------Blog--------------*/
+
+  .blog-intro {
+    height: 70vh;
+  }
+
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquariums pour tous - Contact</title>
+    <link rel="stylesheet" href="../styles/style-contact.css">
+    <link rel="stylesheet" href="../styles/style-design.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icon/favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <!--------------------------Header------------------------->
+
+    <header>
+        <div class="burger-menu">
+            <span class="menu-toggle">&#9776;</span>
+            <div>
+                <img class="logo-header" src="../assets/icon/aquariums-pour-tous.png" alt="aquariums-pour-tous">
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="../aquascaping/aquascaping.html">Aquascaping</a></li>
+                    <li><a href="../fauneflore/fauneflore.html">Faune & Flore</a></li>
+                    <li><a href="../materiel/materiel.html">Matériel</a></li>
+                    <li><a href="../blog/blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="search-contact">
+                <input type="text" id="searchBar" placeholder="Recherche...">
+                <a href="../index.html">Accueil</a>
+
+                <!--------------Search Bar Message------------>
+                <div id="confirmationMessage" class="confirmation-message">Bientôt disponible !
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!------------------Container Contact---------------------->
+
+    <div class="container">
+        <div class="close-btn-contact" id="closeBtn">&times;</div>
+        <div class="title">
+            <h1>Aquariums pour tous</h1>
+        </div>
+        <div class="content">
+            <div class="image">
+                <img src="../assets/images/map.jpg" alt="aquariums-pour-tous">
+            </div>
+            <div class="info">
+                <h2>Besoin de nous contacter ?</h2>
+                <div class="contact-detail footer-section ">
+                    <span class="contact"><img class="phone" src="../assets/icon/phone.png" alt="telephone"> 01 78 46 38
+                        21</span>
+                    <span class="contact"><img class="phone" src="../assets/icon/arobase.png" alt="email">
+                        aquapourtous@gmail.com
+                    </span>
+                    <span class="contact"><img class="phone" src="../assets/icon/enveloppe.png" alt="adresse"> Aquariums
+                        pour tous
+                        <br> 5 Boulevard de l'Océan <br> 75000 Paris</span>
+                </div>
+                <p>Pour toute question, n'hésitez pas à nous contacter via le formulaire ci-dessous.</p>
+            </div>
+        </div>
+    </div>
+
+    <!------------------Form Contact--------------------->
+
+    <div class="form-section">
+        <span id="obligatoire">Veuillez compléter les champs obligatoires *</span>
+        <form id="contactForm">
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="nom">Nom *</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="prenom">Prénom *</label>
+                    <input type="text" id="prenom" name="prenom" required>
+
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" placeholder="exemple: monmail@gmail.com" required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </div>
+                <div class="form-column">
+                    <label for="telephone">Téléphone</label>
+                    <input type="text" id="telephone" name="telephone">
+
+                    <label for="objet">Objet de la demande *</label>
+                    <input type="text" id="objet" name="objet" required>
+
+                    <label for="categorie">Catégorie</label>
+                    <input type="text" id="categorie" name="categorie">
+                </div>
+            </div>
+            <div class="commentaire">
+                <label for="message">Votre message *</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Envoyer un message</button>
+            </div>
+        </form>
+    </div>
+
+    <!-------------Confirmation Message------------------>
+
+    <div id="sendMessage" class="send-message">
+        Votre message a bien été envoyé !
+    </div>
+
+    <!-----------------Back to Top button--------------->
+
+    <div class="back-to-top" id="backToTop"><svg viewBox="0 0 24 24">
+            <path d="M12 2L4 10h5v10h6V10h5L12 2z"></path>
+        </svg></div>
+
+    <!---------------------Footer----------------------->
+
+    <footer class="footer footer-bis footer-contact">
+
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Plan du site</h3>
+                <p><a href="../index.html">Accueil</a></p>
+                <p><a href="../aquascaping/aquascaping.html">Aquascaping</a></p>
+                <p><a href="../fauneflore/fauneflore.html">Faune et Flore</a></p>
+                <p><a href="../materiel/materiel.html">Matériel</a></p>
+                <p><a href="../blog/blog.html">Blog</a></p>
+            </div>
+            <div class="footer-section">
+                <img class="logo2" src="../assets/icon/aquariums-pour-tous.png" alt="aquariums-pour-tous"
+                    title="aquariums-pour-tous">
+                <div class="logo-icons">
+                    <img src="../assets/icon/instagram-2.png" alt="Instagram">
+                    <img src="../assets/icon/twitter.png" alt="Twitter">
+                    <img src="../assets/icon/facebook.png" alt="Facebook">
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="contact"><img class="phone" src="../assets/icon/phone.png" alt="telephone"> 01 78 46 38 21
+                </div>
+                <div class="contact"><img class="phone" src="../assets/icon/arobase.png" alt="email">
+                    aquapourtous@gmail.com
+                </div>
+                <div class="contact"><img class="phone" src="../assets/icon/enveloppe.png" alt="adresse"> Aquariums pour
+                    tous
+                    <br> 5 Boulevard de l'Océan - 75000 Paris
+                </div>
+                <a href="../contact/contact.html" class="btn contact-us">Contactez-nous !</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Aquariums pour tous | MENTIONS LÉGALES & COOKIES | CGV</p>
+        </div>
+    </footer>
+
+    <!---------------------Scripts---------------------->
+
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/script-contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+/*------------Faune et Flore-----------*/
+
+/*----------Intro-----------*/
+
+.intro {
+  background-image: url('../assets/images/poissons/banner/banniere.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 62px;
+}
+
+.intro h1 {
+  font-size: 45px;
+  margin-top: 1vh;
+}
+
+.intro h2 {
+  font-size: 23px;
+}
+
+#ecrin {
+  margin-top: 5px;
+}
+
+/*--------Banner---------*/
+
+.category {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 700px;
+  font-size: 32px;
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  color: #3b5998;
+  margin-right: 15px;
+}
+
+.category2 {
+  justify-content: flex-start;
+  margin-left: 15px;
+}
+
+.category-reverse {
+  flex-direction: row-reverse;
+}
+
+/*-----Article content-----*/
+
+.article-faune {
+  background: #3b589898;
+}
+
+.article-faune-bis {
+  background: #19700399;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.column {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  flex: 1;
+  padding-right: 20px;
+  margin-left: 30px;
+}
+
+.column h2 {
+  font-size: 28px;
+  margin: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.column h3 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+}
+
+.column p {
+  font-size: 14px;
+  margin: 0 0 20px 0;
+  color: #ffffff;
+}
+
+/*--------------------Matériel-------------------*/
+
+/*----------------Intro-----------------*/
+
+.outil {
+  background-image: url(../assets/images/materiel/materiel.jpg);
+}
+
+.intro h1 {
+  font-size: 45px;
+  animation: zoomIn 1.2s ease-in-out;
+}
+
+.outil h2 {
+  margin-top: -1vh;
+  font-size: 30px;
+}
+
+/*---------Intro Animation---------*/
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/*--------Article content---------*/
+
+.article-faune, .article-faune-bis {
+  display: flex;
+  justify-content: center;
+}
+
+.kits-container {
+  text-align: center;
+  max-width: 1500px;
+}
+
+.kits-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.kits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.kit-item {
+  background-color: #f4f4f4;
+  border: 2px solid #ccc;
+  padding: 20px;
+  max-width: 49%;
+  min-width: 300px;
+  text-align: center;
+}
+
+.kit-heading {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.kit-description,
+.kit-price {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  color: #555;
+}
+
+.kit-stars {
+  color: gold;
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+
+.kit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.kit-button:hover {
+  background-color: #45a049;
+}
+
+.kit-image {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+/*--------ALL IMG--------*/
+
+.fish {
+  width: 250px;
+  height: 250px;
+  margin: 0;
+  border-radius: 5%;
+}
+
+.fish-shrimp {
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+}
+
+
+/*----------Media Queries Tablet--------------*/
+
+@media (max-width: 910px) {
+
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 80%;
+    flex: 1;
+    padding: 0;
+    margin: 10px;
+  }  
+
+  .column h2,
+  .column h3 {
+    text-align: center;
+  }
+
+  .fish-shrimp {
+    padding-bottom: 10px;
+    width: 350px;
+    height: 280px;
+    border-radius: 30px;
+  }
+
+}
+
+/*----------Media Queries Smartphone--------------*/
+
+/*----------Faune & Flore------*/
+
+@media (max-width: 768px) {
+
+  /*----------Banner--------*/
+
+  .size-ban {
+    width: 55vw;
+    margin: 20px 0 0 0;
+    align-content: center;
+  }
+
+  .banniere {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 0px;
+    height: auto;
+  }
+
+  .category {
+    font-size: 20px;
+  }
+
+  /*-----Article content-----*/
+
+  .row {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .column {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+
+  .fish {
+    padding-bottom: 15px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .fish-shrimp {
+    width: 250px;
+    height: 200px;
+  }  
+
+  .kits-title {
+    font-size: 20px;
+  }
+    
+  /*-----------Matériel--------*/
+
+  .kits-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kit-item {
+    flex: 1 1 100%;
+    max-width: 800px;
+  }
+}
