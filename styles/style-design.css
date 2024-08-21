@@ -414,6 +414,7 @@ header {
     #accueil {
         font-size: 25px;
         text-align: center;
+        align-items: center;
     }
 
     /*--------Header-------*/
