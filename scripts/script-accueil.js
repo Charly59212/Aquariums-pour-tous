@@ -4,6 +4,23 @@ window.addEventListener('DOMContentLoaded', function() {
     // Select the splash screen element
     const splashScreen = document.getElementById('splash-screen');
 
+      // Media Query to change text size for small screens
+      function applyResponsiveTextSize() {
+        const mediaQuery = window.matchMedia('(max-width: 768px)'); // Match screens 768px and below
+        const animatedText = document.getElementById('accueil'); // Target the element with the ID 'accueil'
+
+        if (mediaQuery.matches) { // If the media query matches
+            animatedText.style.fontSize = '20px'; // Set text size to 20px
+        } else {
+            animatedText.style.fontSize = ''; // Reset text size for larger screens
+        }
+    }
+
+    // Apply text size immediately on load
+    applyResponsiveTextSize();
+
+    // Listen for changes in screen size and apply text size accordingly
+    window.addEventListener('resize', applyResponsiveTextSize);
     // Check if the user has visited the site before using sessionStorage
     if (!sessionStorage.getItem('hasVisited')) {
         // Dynamically create more bubbles for the animation
