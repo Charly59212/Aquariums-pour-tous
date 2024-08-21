@@ -412,8 +412,8 @@ header {
     /*----Animation first visit-------*/
 
     #accueil {
-        font-size: 1.5em;
-        margin: auto;
+        font-size: 1.2em;
+        text-align: center;
     }
 
     /*--------Header-------*/
