@@ -412,11 +412,8 @@ header {
     /*----Animation first visit-------*/
 
     #accueil {
-        font-size: 25px;
+        font-size: 5px;
         text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     /*--------Header-------*/
