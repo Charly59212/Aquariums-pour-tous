@@ -411,7 +411,7 @@ header {
 
     /*----Animation first visit-------*/
 
-    #accueil {
+    #splash-screen, #accueil {
         font-size: 1.5em;
     }
 
