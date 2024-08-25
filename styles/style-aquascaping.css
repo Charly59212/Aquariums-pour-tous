@@ -405,14 +405,6 @@ button.next {
     height: 25vh;
   }
 
-  /*------------Caroussel---------------*/
-
-  button.prev,
-  button.next {
-    font-size: 15px;
-    padding: 0.5rem;
-  }
-
   /*-----------Faune & Flore------------*/
 
   .category {
